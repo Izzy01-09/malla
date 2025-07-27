@@ -1,28 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Malla Curricular - Ingeniería Mecánica</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malla Interactiva - Ingeniería Mecánica</title>
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <div class="container">
     <h1>🌸 Malla Interactiva - Ingeniería Mecánica 🌸</h1>
     <p>Haz clic en las materias que ya cursaste para ver tu progreso y lo que puedes cursar después.</p>
-    <div class="resumen">
-      <strong>Progreso:</strong> <span id="porcentaje">0%</span><br>
-      <strong>Créditos aprobados:</strong> <span id="creditos-aprobados">0</span> / 166<br>
-      <strong>Semestres completados:</strong> <span id="semestres-completados">0</span><br>
-      <strong>Semestres estimados restantes:</strong> <span id="semestres-restantes">0</span>
+
+    <div class="progreso">
+      <p><strong>Progreso:</strong> <span id="porcentaje">0%</span></p>
+      <p><strong>Créditos aprobados:</strong> <span id="creditos-aprobados">0</span> / 166</p>
+      <p><strong>Semestres completados:</strong> <span id="semestres-completados">0</span></p>
+      <p><strong>Semestres estimados restantes:</strong> <span id="semestres-restantes">0</span></p>
     </div>
-  </header>
-  <main id="malla"></main>
-  <footer>
-    Desarrollado con 💖 por Isa ✨
-  </footer>
+
+    <div id="semestres-container" class="semestres"></div>
+
+    <footer>
+      Desarrollado con 💖 por Isa ✨
+    </footer>
+  </div>
+
   <script src="malla.js"></script>
   <script src="script.js"></script>
 </body>
